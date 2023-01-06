@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "DM Sans", sans-serif;
+}
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #fffffe;
+}
+
+.title {
+  text-align: center;
+  margin: 2%;
+  color: #00214d;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 3%;
+  height: 5vh;
+}
+
+.site-logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.searchBar {
+  width: 80%;
+}
+
+.searchBar input {
+  width: 100%;
+  height: 100%;
+  text-indent: 2%;
+  font-size: 1.5rem;
+  border-radius: none;
+  border-top: none;
+  border-left: 0;
+  border-right: 0;
+}
+
+.searchBar input:focus {
+  background-color: #fde24f;
+}
+
+.searchButton {
+  height: 100%;
+  width: 10%;
+}
+
+.searchButton button {
+  background: #00ebc7;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+
+  padding: 2%;
+}
+
+.result-wrapper {
+  background-color: #00ebc7;
+  padding: 2% 4%;
+  margin: 2% 4%;
+}
+
+.result {
+  font-size: 3rem;
+  height: 100%;
+  line-height: 1.2;
+}
+.footer {
+  margin-bottom: 2%;
+}
+
+.footer a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .App {
+    height: 100vh;
+    width: 100vh;
+  }
+  .navbar {
+    display: inline-block;
+  }
+
+  .site-logo {
+    width: 10%;
+  }
+
+  .result {
+    font-size: 2rem;
+  }
+}
